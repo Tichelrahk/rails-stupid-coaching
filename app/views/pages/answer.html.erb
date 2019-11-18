@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="banner-background">
+    <div class="banner">
+    </div>
+    <div class="banner-linear__gradient">
+
+    </div>
+  </div>
+    <h1 class="banner-title">Stupid Coaching</h1>
+  <div class="card your-question">
+    <h3><%= @params[:question] %></h3>
+    <p><em>-You</em></p>
+  </div>
+  <div class="card coach-response">
+    <h3>
+      <%= @answer %>
+    </h3>
+    <p><em>-Your Coach</em></p>
+  </div>
+  <div>
+    <%= link_to "Ask Again", root_path, class: 'btn' %>
+  </div>
+</div>
